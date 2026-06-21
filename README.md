@@ -18,12 +18,12 @@ Skills demonstrated
 Projects
 | # | Project | Description |
 |---|---------|-------------|
-| 01 | [LED Blink Circuit](./01-led-blink-circuit) | Basic resistor + LED series circuit. First schematic-to-Gerber workflow. |
-| 02 | [ATtiny85 Microcontroller Board](./02-attiny85-microcontroller) | Minimal MCU board with reset circuit, decoupling, and copper pour. |
-| 03 | [AMS1117 Power Supply](./03-ams1117-power-supply) | 5V-to-3.3V regulated power supply with proper input/output decoupling. |
-| 04 | [BME280 I2C Sensor Board](./04-bme280-i2c-sensor) | ATtiny85 + BME280 environmental sensor over I2C, on a 4-layer board. |
-| 05 | [USB-C Power Board](./05-usb-c-power-board) | USB-C input with ESD protection, CC detection, and 3.3V regulation. |
-| 06 | [IoT Environmental Monitor (Capstone)](./06-iot-environmental-monitor) | Full system: USB-C power, ATtiny85, BME280 sensor, DFM-reviewed and fabricated. |
+| 01 | [LED Blink Circuit](./01-Led-Blink-Circuit) | Current-limited LED driver circuit with calculated resistor values for two different LED forward voltages. |
+| 02 | [ATtiny85 Microcontroller Board](./02-ATtiny85-Microcontroller) | Minimal ATtiny85 breakout with a proper reset circuit, decoupling, and a ground plane, on a 2-layer board. |
+| 03 | [AMS1117 Power Supply](./03-AMS1117-Power-Supply) | 5V-to-3.3V regulated power supply with proper input/output decoupling, built on a 4-layer stackup with dedicated GND/power planes. |
+| 04 | [BME280 I2C Sensor Board](./04-BME280-I2C-Sensor) | Self-contained sensor module with onboard 5V-to-3.3V regulation, an ATtiny85, and a BME280 environmental sensor over I2C. |
+| 05 | [USB-C Power Board](./05-USB-C-Power-Board) | USB-C input with ESD protection, CC detection, differential pair routing, and 3.3V regulation. |
+| 06 | [IoT Environmental Monitor (Capstone)](./06-IoT-Environmental-Monitor) | Full system: USB-C input with ESD protection, onboard power regulation, an ATtiny85, and a BME280 sensor. Designed, fabricated, and assembled. |
 
 Tools
 
@@ -34,4 +34,4 @@ About this repository
 Each project folder contains:
 - A README with the design brief, schematic, PCB layout, and key decisions
 - Schematic and PCB screenshots
-- Gerber files where available
+- KiCad source files
